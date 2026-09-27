@@ -13,7 +13,7 @@ console.log(username);
 console.log("Hello "+username + "! Welcome to javascript");
 const userage = prompt("How old are you?");
 if (userage>=18)  {
-    console.log("you are of an adult");
+    console.log("you are an adult");
 } else{
     console.log("you are under 18");
 }
