@@ -1,0 +1,121 @@
+/* ==========================================
+   General page
+   ========================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   Headings
+   ========================================== */
+
+h1 {
+    margin-bottom: 10px;
+}
+
+
+/* ==========================================
+   Buttons
+   ========================================== */
+
+button {
+    padding: 8px 14px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   Exercise 1: Table
+   ========================================== */
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+th,
+td {
+    border: 1px solid #333;
+    padding: 8px 15px;
+}
+
+
+th {
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   Exercise 3: Textarea
+   ========================================== */
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   Feedback information
+   ========================================== */
+
+#feedbackInfo {
+    margin: 8px 0;
+}
+
+
+#status {
+    margin-left: 10px;
+}
+
+
+/* ==========================================
+   Preview
+   ========================================== */
+
+#preview {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 40px;
+    background: #fafafa;
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================
+   Exercise 5: Keyboard
+   ========================================== */
+
+#keybox {
+    padding: 20px;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+    margin: 15px 0;
+    min-height: 30px;
+}
+
+
+#keyinfo {
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   Bonus: Location
+   ========================================== */
+
+#locationStatus {
+    margin-top: 15px;
+}

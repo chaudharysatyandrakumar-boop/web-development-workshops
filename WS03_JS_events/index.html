@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Workshop 3</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body class="ws3">
+
+    <h1>Workshop 3: JavaScript Events</h1>
+
+    <hr>
+
+    <p>
+        In this workshop, you will practise using JavaScript events.
+        Use the course materials for help and save your code for later use.
+    </p>
+
+    <hr>
+
+
+    <!-- =========================
+         Exercise 1
+         ========================= -->
+
+    <h2>Exercise 1: Basic Click Events</h2>
+
+    <p>
+        Below you can see two buttons. The first button uses an
+        <code>onclick</code> event. The second button calls
+        <code>showTable()</code>.
+    </p>
+
+    <p>
+        <button onclick="alert('You clicked me!')">
+            Click me
+        </button>
+
+        <button onclick="showTable()">
+            Show Animal table
+        </button>
+    </p>
+
+    <div id="tableContainer"></div>
+
+    <hr>
+
+
+    <!-- =========================
+         Exercise 2
+         ========================= -->
+
+    <h2>Exercise 2: Event Listeners and DOM Manipulation</h2>
+
+    <ul>
+        <li>
+            Move your mouse over the Exercise 2 heading.
+            A message will appear in the browser console.
+        </li>
+
+        <li>
+            Click the Exercise 1 heading.
+            The heading will change colour and text.
+        </li>
+    </ul>
+
+    <p>
+        Open the browser developer console with <strong>F12</strong>
+        to see the mouseover message.
+    </p>
+
+    <hr>
+
+
+    <!-- =========================
+         Exercise 3
+         ========================= -->
+
+    <h2>Exercise 3: Input Events</h2>
+
+    <p>
+        Use the feedback form to practise focus, blur and input events.
+    </p>
+
+    <h3>Quick Feedback Form</h3>
+
+    <form id="feedbackForm" novalidate>
+
+        <label for="feedback">
+            Feedback:
+        </label>
+
+        <br>
+
+        <textarea
+            id="feedback"
+            placeholder="Write your feedback..."
+            rows="5"
+            maxlength="200"
+        ></textarea>
+
+        <div id="feedbackInfo">
+
+            <span id="charcount">
+                0/200
+            </span>
+
+            <span
+                id="status"
+                aria-live="polite"
+            ></span>
+
+        </div>
+
+        <button
+            id="sendBtn"
+            type="submit"
+        >
+            Send
+        </button>
+
+    </form>
+
+
+    <h3>Preview</h3>
+
+    <div id="preview">
+        (The preview will appear here)
+    </div>
+
+    <hr>
+
+
+    <!-- =========================
+         Exercise 4
+         ========================= -->
+
+    <h2>Exercise 4: Form Submission</h2>
+
+    <p>
+        Enter between 10 and 200 characters into the feedback box
+        and press Send.
+    </p>
+
+    <hr>
+
+
+    <!-- =========================
+         Exercise 5
+         ========================= -->
+
+    <h2>Exercise 5: Keyboard Events</h2>
+
+    <h3>Detecting Key Presses</h3>
+
+    <p>
+        Press any key on your keyboard.
+    </p>
+
+    <div id="keybox">
+        Press any key...
+    </div>
+
+    <p id="keyinfo"></p>
+
+    <hr>
+
+
+    <!-- =========================
+         Bonus Exercise
+         ========================= -->
+
+    <h2>Bonus Exercise: Google Maps and Geolocation</h2>
+
+    <h3>Google Maps</h3>
+
+    <p>
+        Example location:
+    </p>
+
+    <a
+        href="https://www.google.com/maps?q=60.1699,24.9384"
+        target="_blank"
+    >
+        Open Helsinki in Google Maps
+    </a>
+
+
+    <h3>Geolocation</h3>
+
+    <p>
+        Click the button to request your current location.
+    </p>
+
+    <button id="locationBtn">
+        Find My Location
+    </button>
+
+    <p id="locationStatus"></p>
+
+</body>
+
+</html>
