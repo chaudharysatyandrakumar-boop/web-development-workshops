@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Workshop 04 – DOM Scripting</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="mainHeading">Workshop 04 – Animals and the DOM</h1>
+
+        <p>
+            In this workshop, we will practise selecting HTML elements,
+            listening for events and changing the DOM.
+        </p>
+
+        <p>
+            <strong>Select → Listen → Change the DOM</strong>
+        </p>
+
+        <button id="animalButton">Show / hide table</button>
+
+        <table id="animalTable">
+            <thead>
+                <tr>
+                    <th>
+                        Elephants are the world's largest land animals.
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </header>
+
+    <main>
+        <section>
+            <h2 id="taskOneHeading">Task 1: Changing content</h2>
+
+            <div class="buttons">
+                <button id="changeHeadingButton">
+                    Change heading
+                </button>
+
+                <button id="changeStyleButton">
+                    Change style
+                </button>
+
+                <button id="changeTextButton">
+                    Change animal text
+                </button>
+
+                <button id="changeBackgroundButton">
+                    Change background
+                </button>
+            </div>
+
+            <p id="animalText">
+                Elephants are the world's largest land animals.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Task 2: Creating elements with JavaScript</h2>
+
+            <div id="animalContent"></div>
+
+            <div class="buttons">
+                <button id="hideAnimalButton">
+                    Hide animal
+                </button>
+
+                <button id="showAnimalButton">
+                    Show animal
+                </button>
+            </div>
+
+            
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Task 3: Selecting an animal</h2>
+
+            <label for="animalSelect">Select an animal:</label>
+
+            <select id="animalSelect">
+                <option value="elephant">Elephant</option>
+                <option value="tiger">Tiger</option>
+                <option value="penguin">Penguin</option>
+                <option value="panda">Panda</option>
+            </select>
+
+            <article id="selectedAnimal">
+                <h3 id="animalName">Elephant</h3>
+
+                <img
+                    id="animalImage"
+                    src="images/elephant.png"
+                    alt="Elephant"
+                >
+
+                <div class="buttons">
+                    <button id="moveAnimalButton">
+                        Move animal image
+                    </button>
+
+                    <button id="fadeAnimalButton">
+                        Fade animal image
+                    </button>
+
+                    <button id="removeAnimalButton">
+                        Remove animal image
+                    </button>
+                </div>
+
+                <p id="animalDescription">
+                    Elephants are the world's largest land animals.
+                </p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Task 4: Adding animal observations</h2>
+
+            <p>
+                Add animals you have seen recently.
+            </p>
+
+            <form id="animalForm">
+                <div>
+                    <label for="observationAnimal">Animal:</label>
+
+                    <input
+                        type="text"
+                        id="observationAnimal"
+                        name="observationAnimal"
+                    >
+                </div>
+
+                <div>
+                    <label for="observationLocation">Location:</label>
+
+                    <input
+                        type="text"
+                        id="observationLocation"
+                        name="observationLocation"
+                    >
+                </div>
+
+                <div>
+                    <label for="observationDate">Date:</label>
+
+                    <input
+                        type="date"
+                        id="observationDate"
+                        name="observationDate"
+                    >
+                </div>
+
+                <button type="submit">
+                    Add observation
+                </button>
+            </form>
+
+            <table id="observationTable">
+                <thead>
+                    <tr>
+                        <th>Animal</th>
+                        <th>Location</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="observationTableBody">
+                    <tr>
+                        <td>Squirrel</td>
+                        <td>Park</td>
+                        <td>15 September 2026</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Hare</td>
+                        <td>Forest</td>
+                        <td>18 September 2026</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            
+
+            <p>
+                You can add and remove the animal you just added.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

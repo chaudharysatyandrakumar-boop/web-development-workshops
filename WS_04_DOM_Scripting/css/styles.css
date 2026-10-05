@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 25px;
+}
+
+button {
+    padding: 8px 14px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.highlight {
+    background-color: yellow;
+    padding: 5px;
+}
+
+.animal-heading {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+#animalContent {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+#animalContent img {
+    max-width: 300px;
+    display: block;
+    margin-top: 10px;
+}
+
+#animalImage {
+    max-width: 300px;
+    display: block;
+    margin-top: 15px;
+}
+
+.image-highlight {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+#animalForm {
+    margin: 20px 0;
+}
+
+#animalForm div {
+    margin-bottom: 10px;
+}
+
+#animalForm input {
+    padding: 6px;
+    margin-left: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+.image-move {
+    animation: moveAnimal 2s ease-in-out;
+}
+
+@keyframes moveAnimal {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(150px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.image-fade {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.remove-button {
+    margin: 0;
+}
