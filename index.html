@@ -1,31 +1,131 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My favourite animal</title>
-    
-    </head>
-    <body>
-        <h1>My Favourite animal: The Cat</h1>
-        <p>
-    Cats are my favourite animals because they are cute, playful, and intelligent.
-    They can be very friendly and enjoy spending time with people, but they can
-    also be independent. Cats love to sleep, climb, explore, and play with toys.
-    They also have excellent hearing and can see well in low light. I think cats
-    make wonderful pets and are great companions.
-       </p>
-       <img src="https://cdn.pixabay.com/photo/2024/02/28/07/42/european-shorthair-8601492_1280.jpg" alt="A Cat" width="400">
-           <p>
-        <a href="https://en.wikipedia.org/wiki/Cat">Learn more about cats</a>
-    </p>
-        <p>
-    <a href="WS02_JS_basics/">Workshop 2: JavaScript Basics</a>
-</p>
-<p>
-    <a href="WS03_JS_events/">Workshop 3: JavaScript Events</a>
-</p>
-<p>
-    <a href="WS_04_DOM_Scripting/">Workshop 4: JavaScript DOM Scripting</a>
-</p>
-       
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favourite Animal | Cats</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">🐱 Cat World</div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Cats</a></li>
+                <li><a href="#facts">Facts</a></li>
+                <li><a href="#learn">Learn More</a></li>
+            </ul>
+
+            <button id="dark-mode-button">🌙 Dark Mode</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>My Favourite Animal: The Cat</h1>
+
+                <p>
+                    Curious, intelligent, playful and independent.
+                    Cats make wonderful companions.
+                </p>
+
+                <a class="button" href="#about">Discover Cats</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">Why I Love Cats</h2>
+
+            <div class="about">
+                <p>
+                    Cats are my favourite animals because they are cute, playful,
+                    and intelligent. They can be friendly and enjoy spending time
+                    with people, but they can also be wonderfully independent.
+                </p>
+
+                <img
+                    class="cat-image"
+                    src="https://cdn.pixabay.com/photo/2024/02/28/07/42/european-shorthair-8601492_1280.jpg"
+                    alt="A cat"
+                >
+
+                <p>
+                    Cats love to sleep, climb, explore and play with toys.
+                    They also have excellent hearing and can see well in low light.
+                    I think cats make wonderful pets and great companions.
+                </p>
+            </div>
+        </section>
+
+        <section class="facts" id="facts">
+            <h2 class="section-title">Interesting Cat Facts</h2>
+
+            <div class="fact-grid">
+
+                <article class="fact-card">
+                    <h3>🐾 Flexible</h3>
+                    <p>
+                        Cats have flexible bodies that help them climb,
+                        jump and move through small spaces.
+                    </p>
+                </article>
+
+                <article class="fact-card">
+                    <h3>👂 Great Hearing</h3>
+                    <p>
+                        Cats can hear many sounds that are too high-pitched
+                        for humans to hear.
+                    </p>
+                </article>
+
+                <article class="fact-card">
+                    <h3>😴 Sleepy</h3>
+                    <p>
+                        Cats spend a large part of their day sleeping
+                        and resting.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="links" id="learn">
+            <h2 class="section-title">Learn More</h2>
+
+            <p>
+                <a class="button" href="https://en.wikipedia.org/wiki/Cat">
+                    Learn about cats
+                </a>
+            </p>
+
+            <p>
+                <a class="button" href="WS02_JS_basics/">
+                    Workshop 2: JavaScript Basics
+                </a>
+
+                <a class="button" href="WS03_JS_events/">
+                    Workshop 3: JavaScript Events
+                </a>
+
+                <a class="button" href="WS_04_DOM_Scripting/">
+                    Workshop 4: DOM Scripting
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>🐱 Cat World — Built while learning web development</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
 </html>
